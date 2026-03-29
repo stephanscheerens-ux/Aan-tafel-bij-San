@@ -1,43 +1,232 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aan Tafel bij San</title>
-    <style>
-        body{ font-family: Georgia, serif; background-color:#e9dfd4; margin:0; text-align:center; color:#333; }
-        header{ padding:40px 20px; }
-        h1{ font-size:48px; letter-spacing:3px; margin-bottom:10px; }
-        .subtitle{ font-size:20px; color:#555; }
-        .menu{ background:white; padding:40px; margin:30px auto; max-width:600px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
-        .menu h2{ margin-top:0; }
-        .price{ font-size:26px; font-weight:bold; margin:20px 0; }
-        .button{ display:inline-block; padding:15px 25px; background:#c5a58c; color:white; text-decoration:none; border-radius:5px; font-size:18px; }
-        .button:hover{ background:#a8856b; }
-        .info{ max-width:600px; margin:30px auto; font-size:16px; }
-        footer{ margin-top:40px; padding:20px; font-size:14px; color:#666; }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aan Tafel bij San</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f6efe8;
+color:#2c2c2c;
+line-height:1.6;
+}
+
+.hero{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+uurl("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-family:'Playfair Display', serif;
+font-size:64px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:22px;
+margin-top:10px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
+
+.menu-card{
+background:white;
+padding:60px;
+border-radius:16px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+text-align:center;
+margin-top:-120px;
+position:relative;
+}
+
+.menu-card h2{
+font-family:'Playfair Display', serif;
+font-size:36px;
+margin-bottom:10px;
+}
+
+.menu-sub{
+font-style:italic;
+margin-bottom:35px;
+color:#666;
+}
+
+.dish{
+font-size:20px;
+margin:15px 0;
+}
+
+.price{
+font-size:32px;
+margin-top:35px;
+font-weight:500;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:16px 40px;
+background:#caa483;
+color:white;
+border-radius:10px;
+text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+.button:hover{
+background:#b69070;
+}
+
+.section{
+margin-top:80px;
+text-align:center;
+}
+
+.section h3{
+font-family:'Playfair Display', serif;
+font-size:34px;
+margin-bottom:20px;
+}
+
+.info{
+font-size:18px;
+margin-top:20px;
+}
+
+footer{
+margin-top:80px;
+text-align:center;
+padding:40px 20px;
+font-size:14px;
+color:#666;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.menu-card{
+padding:35px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-<header>
-    <h1>AAN TAFEL BIJ SAN</h1>
-    <p class="subtitle">Wekelijks vers huisgemaakt afhaalmenu</p>
-</header>
-<div class="menu">
-    <h2>Weekmenu 14 – woensdag 1 april</h2>
-    <p><strong>Thuis genieten van warme smaken</strong></p>
-    <p> Ajam smoor met pandanrijst en crispy rijstvel<br><br> Sajoer broccoli en zoetzure komkommer </p>
-    <p class="price">€12,00 per persoon</p>
-    <p>Betaling vooraf via Tikkie</p>
-    <a class="button" href="https://wa.me/31619912663"> Bestel via WhatsApp </a>
+
+<section class="hero">
+
+<div>
+<h1>Aan Tafel bij San</h1>
+<p>Wekelijks vers huisgemaakt afhaalmenu</p>
 </div>
+
+</section>
+
+<div class="container">
+
+<div class="menu-card">
+
+<h2>Weekmenu 14</h2>
+
+<div class="menu-sub">
+Woensdag 1 april — Thuis genieten van warme smaken
+</div>
+
+<div class="dish">
+Ajam smoor met pandanrijst en crispy rijstvel
+</div>
+
+<div class="dish">
+Sajoer broccoli en zoetzure komkommer
+</div>
+
+<div class="price">
+€12,00 per persoon
+</div>
+
+<p>Betaling vooraf via Tikkie</p>
+
+<a class="button" href="https://wa.me/31619912663">
+Bestel via WhatsApp
+</a>
+
+</div>
+
+<section class="section">
+
+<h3>Hoe werkt het?</h3>
+
 <div class="info">
-    <p> Bestellen: uiterlijk maandag voor 20:00 via WhatsApp </p>
-    <p> Afhalen: woensdag tussen 17:30 – 18:00<br> Bloesemgeel 13 – Rosmalen </p>
-    <p> Maximaal 5 porties – op = op </p>
+Bestellen kan tot maandag 20:00 via WhatsApp.
 </div>
+
+<div class="info">
+Afhalen op woensdag tussen 17:30 – 18:00
+<br>Bloesemgeel 13 – Rosmalen
+</div>
+
+<div class="info">
+Er zijn maximaal 5 porties beschikbaar.
+Op = op.
+</div>
+
+</section>
+
+<section class="section">
+
+<h3>Over San</h3>
+
+<div class="info">
+
+Na lang dromen ben ik gestart met <b>Aan Tafel bij San</b>.  
+Elke week kook ik een vers huisgemaakt gerecht dat je bij mij kunt ophalen.
+
+Gewoon lekker eten, met liefde gemaakt.
+
+</div>
+
+</section>
+
+</div>
+
 <footer>
-    <p> Heb je allergieën? Laat het even weten. Ik kook in een thuiskeuken waardoor kruisbesmetting niet volledig kan worden uitgesloten. </p>
+
+Heb je allergieën? Laat het weten.  
+Ik kook in een thuiskeuken waardoor kruisbesmetting niet volledig kan worden uitgesloten.
+
 </footer>
+
 </body>
 </html>
